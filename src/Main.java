@@ -26,7 +26,7 @@ public class Main {
 
                 switch (command) {
                     case 1:
-                        System.out.println("Сиздин балансыныз: $" + account.getBalance());
+                        System.out.println("Сиздин балансыныз: $" + account.checkBalance());
                         break;
                     case 2:
                         System.out.print("Депозитке сумманы киргизиниз: ");
@@ -41,7 +41,7 @@ public class Main {
                     case 3:
                         System.out.print("Алынуучу сумманы киргизиниз: ");
                         int withdrawal = scanner.nextInt();
-                        if (withdrawal <= account.getBalance()) {
+                        if (withdrawal <= account.checkBalance()) {
                             account.withdrawal(withdrawal);
                         } else {
                             System.out.println("Баланс жетишсиз, жарактуу сумманы киргизиниз.");

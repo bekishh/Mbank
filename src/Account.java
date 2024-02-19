@@ -13,20 +13,9 @@ public class Account {
 
 
     //    Getter and Setter    //////////////////////////////////////////////////////////
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
 
     public int getPinCode() {
         return pinCode;
-    }
-
-    public void setPinCode(int pinCode) {
-        this.pinCode = pinCode;
     }
 
     //    Methods    ////////////////////////////////////////////////////////////////////
